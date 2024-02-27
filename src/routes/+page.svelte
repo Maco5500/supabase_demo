@@ -16,8 +16,13 @@
 		<li>gib die Vercel-URL zu deinem Projekt via Aufgabe im Teams ab</li>
 	</ul>
 </div>
+
 {#await promise}
-	<div>Loading...</div>
+	<div><span class="loading loading-bars loading-lg" /></div>
 {:then result}
-	<div>{JSON.stringify(result)}</div>
+	<ul>
+		{#each result.data as country}
+			<li>{country.name}</li>
+		{/each}
+	</ul>
 {/await}
