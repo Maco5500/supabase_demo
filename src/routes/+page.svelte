@@ -16,6 +16,7 @@
 		<li>gib die Vercel-URL zu deinem Projekt via Aufgabe im Teams ab</li>
 	</ul>
 </div>
+<br />
 
 {#await promise}
 	<div><span class="loading loading-bars loading-lg" /></div>
